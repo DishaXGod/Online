@@ -1,0 +1,136 @@
+local component = require("component")
+local computer = require("computer")
+local debug = computer.addUser
+local gpu = component.gpu
+xresolution=60
+gpu.setResolution(xresolution,52)
+gpu.setBackground(0x202020)
+gpu.setForeground(0xFFDD00)
+gpu.fill(1,1,xresolution,75," ")
+gpu.set((30-(string.len("DeviceCraft Managment"))/2),2,"DeviceCraft Managment")
+gpu.set((30-(string.len("By Durex77"))/2),3,"By Durex77")
+status1=" [Online] "
+status2=" [Offline]"
+owner={'XRASER','BeTePb'}
+admin={'SergeyZez','SplittingReality'}
+builder={'AnshaABDUL372','MaxonZ',}
+tehadmin={'lLuffy'}
+trumod={'REAKTOR','iIiIiIiMuSiC_oF'}
+modn={'Sierr67','PIXOH','HolltiSS','BuTaMuH4iK','Bazoor','NightmareMoon'}
+donmod={'dark321','GangaMstar','Gra4_',}
+helper={'Night_Raven','TheRedMan','Duno'}
+ 
+while true do
+d=5
+d=d+1
+gpu.setForeground(0x8B1A1A)
+gpu.set((xresolution/2-(string.len("[Owner]"))/2),d,"[Owner]")
+d=d+1
+ 
+for j = 1, #owner do
+ 
+d=d+1
+name=owner[j]
+prov=debug(name)
+if prov ~= nil then gpu.setForeground(0x00FF00) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status1) else gpu.setForeground(0xFF0000) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status2) end
+computer.removeUser(name)
+end
+ 
+d=d+2
+gpu.setForeground(0xCC0000)
+gpu.set((xresolution/2-(string.len("[Admin]"))/2),d,"[Admin]")
+d=d+1
+ 
+for j = 1, #admin do
+ 
+d=d+1
+name=admin[j]
+prov=debug(name)
+if prov ~= nil then gpu.setForeground(0x00FF00) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status1) else gpu.setForeground(0xFF0000) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status2) end
+computer.removeUser(name)
+end
+ 
+d=d+2
+gpu.setForeground(0x473C8B)
+gpu.set((xresolution/2-(string.len("[builder]"))/2),d,"[builder]")
+d=d+1
+ 
+for j = 1, #builder do
+ 
+d=d+1
+name=builder[j]
+prov=debug(name)
+if prov ~= nil then gpu.setForeground(0x00FF00) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status1) else gpu.setForeground(0xFF0000) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status2) end
+computer.removeUser(name)
+end
+ 
+d=d+2
+gpu.setForeground(0xCC0000)
+gpu.set((xresolution/2-(string.len("[Teh-Admin]"))/2),d,"[Teh-Admin]")
+d=d+1
+ 
+for j = 1, #tehadmin do
+d=d+1
+name=tehadmin[j]
+prov=debug(name)
+if prov ~= nil then gpu.setForeground(0x00FF00) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status1) else gpu.setForeground(0xFF0000) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status2) end
+computer.removeUser(name)
+end
+ 
+ 
+d=d+2
+gpu.setForeground(0x0066FF)
+gpu.set((xresolution/2-(string.len("[TrueMod]"))/2),d,"[True-Mod]")
+d=d+1
+ 
+for j = 1, #trumod do
+d=d+1
+name=trumod[j]
+prov=debug(name)
+if prov ~= nil then gpu.setForeground(0x00FF00) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status1) else gpu.setForeground(0xFF0000) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status2) end
+computer.removeUser(name)
+end
+ 
+d=d+2
+gpu.setForeground(0xCD2990)
+gpu.set((xresolution/2-(string.len("[Modn]"))/2),d,"[Modn]")
+d=d+1
+ 
+for j = 1, #modn do
+d=d+1
+name=modn[j]
+prov=debug(name)
+if prov ~= nil then gpu.setForeground(0x00FF00) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status1) else gpu.setForeground(0xFF0000) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status2) end
+computer.removeUser(name)
+end
+ 
+d=d+2
+gpu.setForeground(0xCC0000)
+gpu.set((xresolution/2-(string.len("[Don-Mod]"))/2),d,"[Don-Mod]")
+d=d+1
+ 
+for j = 1, #donmod do
+d=d+1
+name=donmod[j]
+prov=debug(name)
+if prov ~= nil then gpu.setForeground(0x00FF00) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status1) else gpu.setForeground(0xFF0000) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status2) end
+computer.removeUser(name)
+end
+ 
+d=d+2
+gpu.setForeground(0x00FF00)
+gpu.set((xresolution/2-(string.len("[Helper]"))/2),d,"[Helper]")
+d=d+1
+ 
+for j = 1, #helper do
+d=d+1
+name=helper[j]
+prov=debug(name)
+if prov ~= nil then gpu.setForeground(0x00FF00) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status1) else gpu.setForeground(0xFF0000) gpu.set(((xresolution/2)-4-(string.len(name))/2),d,name..status2) end
+computer.removeUser(name)
+end
+ 
+ 
+os.sleep(1.5)
+ 
+end
